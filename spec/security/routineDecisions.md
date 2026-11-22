@@ -291,7 +291,7 @@ pure val decisionValues = Set(
   { finding: C::Rejected, severity: T::SeverityUnset, loss: T::LossUnset, inScope: false, rootCause: 0, duplicateOf: 0, declareRelated: false },
   { finding: C::Confirmed, severity: T::High, loss: T::NotVerified, inScope: true, rootCause: 1, duplicateOf: 0, declareRelated: false })
 pure val weight_decideReport = 16
-pure val weight_failCalls = 10
+pure val weight_failCalls = 30
 pure val weight_saveVersion = 6
 pure val weight_setMode = 6
 pure val weight_advance = 6

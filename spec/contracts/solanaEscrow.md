@@ -864,4 +864,5 @@ pure val weight_releaseMonthlyAward = 30
 pure val weight_releaseMonthlyReserve = 25
 pure val weight_vetoBinding = 15
 pure val weight_tick = 10
+pure val weight_setMonthlyCommitment = 20
 ```

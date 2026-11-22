@@ -277,6 +277,8 @@ pure def stepFinishedIsFinal(before: MaintainerSession, via: str, after: Maintai
     implies unchangedActions(before, after)
 pure def sometimesFinishedAfterPreparing(s: MaintainerSession): bool = s.phase == Finished and s.prepared.length() > 0
 pure val byValues = Set(user, agent, authorityService)
+pure val weight_requestTask = 20
+pure val weight_resolveRepository = 20
 pure val weight_siteAct = 20
 pure val weight_checkPermission = 8
 pure val weight_confirmSession = 4

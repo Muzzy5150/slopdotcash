@@ -183,4 +183,8 @@ pure def sometimesRefusedRevocationExpires(w: QuotaWitness): bool = w.grant == E
 pure def sometimesLostMintExpires(w: QuotaWitness): bool = w.grant == ExpiredGrant and w.scope == NoScope
 pure def sometimesCancelledLeavesGrantUntilExpiry(w: QuotaWitness): bool =
   w.phase == WitnessDone and w.grant == UnknownGrant and w.scope != NoScope and not(w.verified) and not(w.revoked204)
+pure val weight_issue = 4
+pure val weight_observe = 4
+pure val weight_cleanup = 4
+pure val weight_writeReceipt = 4
 ```
